@@ -48,14 +48,12 @@ jobs:
 #!/usr/bin/env python
 
 import os
+from urllib import parse
 
 
 HEADER="""# TIL
 
-> Today I Learned
-
-
-A collection of software engineering tips that I learn every day.
+> Today I Learned Wiki
 
 ---
 
@@ -83,7 +81,7 @@ def main():
         for file in files:
             name = os.path.basename(file).split('.')[0]
             name = " ".join(word.capitalize() for word in name.split('-'))
-            content += "- [{}]({})\n".format(name, os.path.join(category, file))
+            content += "- [{}]({})\n".format(name, parse.quote(os.path.join(category, file)))
         content += "\n"
 
     with open("README.md", "w") as fd:
