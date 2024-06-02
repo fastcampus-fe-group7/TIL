@@ -109,7 +109,8 @@ Error: Process completed with exit code 128.
 
 
 ## 결과
-업로드 후 이미지 추가
+계획한대로 README에 파일링크가 추가된것을 확인할 수 있다.<br>
+![image](https://github.com/fastcampus-fe-group7/TIL/assets/34756233/3f0a25d4-c272-4702-9657-fab1adde3ead)
 
 
 ## 마치며
