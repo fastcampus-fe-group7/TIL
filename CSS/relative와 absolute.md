@@ -1,8 +1,9 @@
-# `relative`와 `absolute`
+# relative와 absolute
 
 ## 목표
 
-CSS 속성 중 `position`이라는 속성이 있고, 그 중 `relative`와 `absolute` 이 두 가지 값이 가장 난이도가 높다. **1)기준**과 **2)문서 흐름(Content-Flow)** 두 가지 관점에서 두 속성값을 이해해보자.
+CSS 속성 중 `position`이라는 속성이 있고, 그 중 `relative`와 `absolute` 이 두 가지 값이 가장 난이도가 높다.
+**1)기준**과 **2)문서 흐름(Content-Flow)** 두 가지 관점에서 두 속성값을 이해해보자.
 
 ## relative
 
@@ -32,9 +33,9 @@ CSS 속성 중 `position`이라는 속성이 있고, 그 중 `relative`와 `abso
 
 - 이는 블록 레벨 요소와 인라인 요소의 배치 방식를 따른다는 의미이다.
 
-### 정리
+### 3. relative 정리
 
-`position: relative`는 **1)요소를 문서의 일반적인 흐름에 따라 배치**한 다음, top, right, bottom, left 속성에 따라 **2)원래 위치에서 상대적으로 이동**시킨다.
+**1)요소를 문서의 일반적인 흐름에 따라 배치**한 다음, top, right, bottom, left 속성에 따라 **2)원래 요소 위치에서 상대적으로 이동**시킨다.
 
 ---
 
@@ -48,7 +49,7 @@ CSS 속성 중 `position`이라는 속성이 있고, 그 중 `relative`와 `abso
 - top, right, bottom, left를 줘야 이동
   - `position: abosolute`만 주면 아무런 변화가 생기지 않는다.
 
-#### absolute 기준 Tip
+#### absolute 추가 Tip
 
 ##### 1. 더 엄밀히 하면, **부모 요소의 padding box**가 기준
 
@@ -78,6 +79,6 @@ CSS 속성 중 `position`이라는 속성이 있고, 그 중 `relative`와 `abso
 - 위와 같이, 요소는 가장 가까운 위치의 지정 조상 요소를 기준으로 배치한다.
 - 다른 요소들은 absolute로 설정된 요소가 차지하던 공간을 인식하지 않는다.
 
-### 정리
+### 3. absolute 정리
 
-`position: absolute`는 **1)일반적인 문서 흐름에서 제거**한 다음, top, right, bottom, left 속성에 따라 **2)지정된 조상 요소를 기준으로 절대적으로 이동**시킨다. **3)문서 흐름에서 제거되므로, 그 자리에 다른 요소들이 위치할 수 있습니다.**
+**1)일반적인 문서 흐름에서 제거**한 다음, top, right, bottom, left 속성에 따라 **2)지정된 조상 요소를 기준으로 절대적으로 이동**시킨다. 문서 흐름에서 제거되므로, **3)그 자리에 다른 요소들이 위치할 수 있다.**
