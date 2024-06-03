@@ -19,10 +19,14 @@ id 선택자와 class 선택자는 모두 특정 HTML 요소에 이름을 붙여
 - 특정 요소 안에 id="값" 형태로 지정한다.
 - `<div id="아이디명"></div>`
 - #아이디명{ 스타일 : 값; }
+### HTML
+  ![id-html](https://github.com/fastcampus-fe-group7/TIL/assets/86473590/3210e3b5-e2d1-4874-b12c-87b985619ed8)
 
- ![alt text](id-html.png)
+ ### CSS
+  ![id-css](https://github.com/fastcampus-fe-group7/TIL/assets/86473590/975b7bac-e555-4db8-be5e-5f7270be19b4)
 
- ![alt text](id-css.png)
+ ### 결과
+  ![idvclass](https://github.com/fastcampus-fe-group7/TIL/assets/86473590/4dc66dfd-5c4e-4ee6-b268-99e29e7832df)
 
 <br>
 
@@ -39,38 +43,48 @@ id 선택자와 class 선택자는 모두 특정 HTML 요소에 이름을 붙여
 - 특정 요소 안에 class="값" 형태로 지정한다.
 - `<div class="클래스명"></div>`
 - .클래스명{ 스타일 : 값; }
-  
-  ![alt text](class-html.png)
-  
-  ![alt text](class-css.png)
-  
-  ![alt text](class-result1.png)
 
-- 같은 요소 중, 특정 요소만 따로 지정할 수도 있다.
+### HTML
+  ![class-html](https://github.com/fastcampus-fe-group7/TIL/assets/86473590/7f9fa42f-e983-4bc8-b3f9-b6e350d11060)
   
-  ![alt text](p-only.png)
+ ### CSS
+  ![p-only](https://github.com/fastcampus-fe-group7/TIL/assets/86473590/9b15131b-e49c-4d23-8ac2-06a8891c6ebe)
+  
+  - 같은 요소 중, 특정 요소만 따로 지정할 수도 있다.
+
+
+ ### 결과
+  ![class-result1](https://github.com/fastcampus-fe-group7/TIL/assets/86473590/aaddb64f-9fe7-4a7c-8b77-ece48e3324ac)
+
+
+
+  
 
 3. 주의사항
 
 - 하나의 요소가 여러 개의 class를 가져 속성이 겹칠 경우, 가장 뒤에 선언된 선택자의 속성을 따른다.
   
-  ![alt text](class-3-html.png)
-  
-  ![alt text](class-3-css.png)
-  
-  ![alt text](class-3-result.png)
+ ### HTML
+  ![class-3-html](https://github.com/fastcampus-fe-group7/TIL/assets/86473590/429e3afb-71e9-4dff-aee9-375f05f2dd1e)
+
+ ### CSS
+  ![class-3-css](https://github.com/fastcampus-fe-group7/TIL/assets/86473590/7bdfc92b-1bb1-4a80-b31f-df3134c00762)
+
+ ### 결과
+  ![class-3-result](https://github.com/fastcampus-fe-group7/TIL/assets/86473590/9d9a935e-a7e5-4266-bc6c-75394572442e)
   
   -> 요소 속성 내 선언된 순서와는 상관없이 bold의 내용이 적용된다.
-
+  <br>
 - 속성이 부모-자식 관계일 경우에는 스타일시트의 선언 순서에 관계 없이 자식의 속성으로 대체된다.
   
-  ![alt text](child-html.png)
-  
-  ![alt text](child-css.png)
-  
-  ![alt text](child-result.png)
+ ### HTML
+  ![child-html](https://github.com/fastcampus-fe-group7/TIL/assets/86473590/4f72b962-409f-4dbb-b949-a2cdff3f905c)
 
-<br>
+ ### CSS
+  ![child-css](https://github.com/fastcampus-fe-group7/TIL/assets/86473590/ac70e6a0-78d5-4340-99a2-0fde59aab73b)
+
+ ### 결과
+  ![child-result](https://github.com/fastcampus-fe-group7/TIL/assets/86473590/b119a93f-c4f9-483a-89f8-cd1a31469f83)
 
 ## 정리
 
