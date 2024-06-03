@@ -8,7 +8,7 @@
 
 ## Git Flow 전략
 
-![image](https://velog.velcdn.com/images/jseo9732/post/a0cfc196-623e-4a27-98d1-a9a8b3d93d17/image.png)
+![image](https://camo.githubusercontent.com/ab25d0d5edf18534d3a089683f8b6ca0bdd06be014bebb3d1b3e566749ed371c/68747470733a2f2f76656c6f672e76656c63646e2e636f6d2f696d616765732f6a73656f393733322f706f73742f61306366633139362d363233652d346132372d393864312d6139613862336439336431372f696d6167652e706e67)
 
 ### 브랜치 구성
 
@@ -33,7 +33,7 @@
 
 ## GitHub Flow 전략
 
-![image](https://velog.velcdn.com/images/jseo9732/post/58fdd4a6-f985-455b-a554-bb3d9fb9a545/image.png)
+![image](https://camo.githubusercontent.com/a0d139d34eaea826e045f7445d208934b87c07b898bdf1a117b6becbed3d8ab9/68747470733a2f2f76656c6f672e76656c63646e2e636f6d2f696d616765732f6a73656f393733322f706f73742f35386664643461362d663938352d343535622d613535342d6262336439666239613534352f696d6167652e706e67)
 
 ### 브랜치 구성
 
@@ -51,7 +51,7 @@
 
 ## GitLab Flow 전략
 
-![image](https://velog.velcdn.com/images/jseo9732/post/5dfa5aaa-a941-402f-8d67-4dff3fc436b9/image.png)
+![image](https://camo.githubusercontent.com/29da1dd4d3b491e7f64472cdfa4abc8754ad4679f97a1dabdb19bc83a0a35a55/68747470733a2f2f76656c6f672e76656c63646e2e636f6d2f696d616765732f6a73656f393733322f706f73742f35646661356161612d613934312d343032662d386436372d3464666633666334333662392f696d6167652e706e67)
 
 ### 브랜치 구성
 
@@ -73,6 +73,6 @@
 - Git Flow와 GitHub Flow의 장점을 결합한 형태의 브랜치 모델로 다양한 배포 환경을 고려함
 - 복잡한 여러 배포 환경을 가진 프로젝트에 사용하기 좋음
 
-## 출처
+## 참고자료
 
 - https://www.youtube.com/watch?v=w2r0oLFtXAw
