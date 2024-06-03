@@ -32,6 +32,9 @@ def main():
         content += "### {}\n\n".format(category)
 
         for file in files:
+            ext = os.path.basename(file).split('.')[1]
+            if ext != 'md':
+                continue
             name = os.path.basename(file).split('.')[0]
             name = " ".join(word.capitalize() for word in name.split('-'))
             content += "- [{}]({})\n".format(name, parse.quote(os.path.join(category, file)))
