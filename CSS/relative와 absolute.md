@@ -61,10 +61,10 @@ CSS 속성 중 `position`이라는 속성이 있고, 그 중 `relative`와 `abso
 
 - 부모 요소 `padding: 20px`, 자식 요소 `top:0`, `left:0`인 경우 (이해를 돕기 위해 부모 요소 `border: 10px`)
     - 적용이 되었기에 자식 요소는 부모 요소의 padding을 무시한다.<br>
-    <img width="170" alt="image" src="https://github.com/red-dev-Mark/TIL/assets/93127663/40f2f6c9-0b62-41f9-91b7-31e37f2b08a3">
+  <img width="170" alt="image" src="https://github.com/red-dev-Mark/TIL/assets/93127663/49b0f1d1-f68f-4d5f-bf41-8e25d24a8d2c">
 - 부모 요소 `padding: 20px`, 자식 요소 `top:0`, `right:0`인 경우
     - 적용이 되었기에 자식 요소는 부모 요소의 padding을 무시한다.<br>
-  <img width="170" alt="image" src="https://github.com/red-dev-Mark/TIL/assets/93127663/49b0f1d1-f68f-4d5f-bf41-8e25d24a8d2c">
+    <img width="170" alt="image" src="https://github.com/red-dev-Mark/TIL/assets/93127663/40f2f6c9-0b62-41f9-91b7-31e37f2b08a3">
 - 부모 요소 `padding: 20px`, 자식 요소 `top`만 0인 경우
     - 오른쪽을 제외한, 왼쪽 padding 영향만 받은 이유는 Content-Flow 때문이다.<br>
   <img width="170" alt="image" src="https://github.com/red-dev-Mark/TIL/assets/93127663/bfe8d3b3-caaf-445a-954c-ccf38b99465b">
