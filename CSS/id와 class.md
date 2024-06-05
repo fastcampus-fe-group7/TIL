@@ -68,7 +68,7 @@ id 선택자와 class 선택자는 모두 특정 HTML 요소에 이름을 붙여
 <div class="korean">손흥민</div>
 <div class="korean">황희찬</div>
 <div class="korean">이강인</div>
-<div class="korean">김민재</div>
+<div class="korean">황인범</div>
 ```
   
  ### CSS
