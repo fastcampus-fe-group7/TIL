@@ -20,11 +20,27 @@ id 선택자와 class 선택자는 모두 특정 HTML 요소에 이름을 붙여
 - `<div id="아이디명"></div>`
 - #아이디명{ 스타일 : 값; }
 ### HTML
-  ![id-html](https://github.com/fastcampus-fe-group7/TIL/assets/86473590/3210e3b5-e2d1-4874-b12c-87b985619ed8)
-
+  ```html
+  <p>id class 적용 X</p>
+  <div id="man">남자</div>
+  <div id="woman">여자</div>
+  ```
  ### CSS
-  ![id-css](https://github.com/fastcampus-fe-group7/TIL/assets/86473590/975b7bac-e555-4db8-be5e-5f7270be19b4)
+ ```css
+  div{
+    color:white;
+  }
 
+  #man{
+    background-color:blue;
+    width:10%
+  }
+
+  #woman{
+    background-color:red;
+    width:10%
+  }
+ ```
  ### 결과
   ![idvclass](https://github.com/fastcampus-fe-group7/TIL/assets/86473590/4dc66dfd-5c4e-4ee6-b268-99e29e7832df)
 
@@ -45,14 +61,34 @@ id 선택자와 class 선택자는 모두 특정 HTML 요소에 이름을 붙여
 - .클래스명{ 스타일 : 값; }
 
 ### HTML
-  ![class-html](https://github.com/fastcampus-fe-group7/TIL/assets/86473590/7f9fa42f-e983-4bc8-b3f9-b6e350d11060)
+```html
+<p>일반적인 p 태그</p>
+<p class="red">여기만 RED<p>
+<div class="korean captine">손흥민</div>
+<div class="korean">손흥민</div>
+<div class="korean">황희찬</div>
+<div class="korean">이강인</div>
+<div class="korean">김민재</div>
+```
   
  ### CSS
-  ![p-only](https://github.com/fastcampus-fe-group7/TIL/assets/86473590/9b15131b-e49c-4d23-8ac2-06a8891c6ebe)
+ ```css
+p.red{
+    color:red;
+}
+
+.korean{
+    text-decoration:underline;
+}
+
+.captain{
+    color:red;
+}
+ ```
+  - `ABC.XYZ {}` : 복합 선택자 - 일치 선택자
+    - 선택자 ABC와 XYZ를 동시에 만족시키는 요소를 선택
+  - `복합 선택자`를 통해 두 가지 이상의 선택자를 만족시키는 요소를 따로 지정할 수 있다.
   
-  - 같은 요소 중, 특정 요소만 따로 지정할 수도 있다.
-
-
  ### 결과
   ![class-result1](https://github.com/fastcampus-fe-group7/TIL/assets/86473590/aaddb64f-9fe7-4a7c-8b77-ece48e3324ac)
 
@@ -62,26 +98,82 @@ id 선택자와 class 선택자는 모두 특정 HTML 요소에 이름을 붙여
 
 3. 주의사항
 
-- 하나의 요소가 여러 개의 class를 가져 속성이 겹칠 경우, 가장 뒤에 선언된 선택자의 속성을 따른다.
+- 하나의 요소가 여러 개의 class 선택자를 가질 경우, 선택자의 `우선순위`가 같다면 가장 뒤에 선언된 선택자의 속성을 따른다. `우선순위`가 다를 경우, 선택자가 선언된 순서에 관계없이 우선순위가 높은 선택자의 속성을 따른다.
+- `선택자 우선순위` : !important(최우선) > inline (1000) > id (100) > class (10) > 태그 (1) > * (0)
   
+## 우선순위가 같을 경우
  ### HTML
-  ![class-3-html](https://github.com/fastcampus-fe-group7/TIL/assets/86473590/429e3afb-71e9-4dff-aee9-375f05f2dd1e)
+ ```html
+ <div class="green bold">무슨 색?</div>
+ <div class="bold green">무슨 색?</div>
+ ```
 
  ### CSS
-  ![class-3-css](https://github.com/fastcampus-fe-group7/TIL/assets/86473590/7bdfc92b-1bb1-4a80-b31f-df3134c00762)
+ ```css
+ .green{  
+    color:green;
+ }
+
+ .bold{
+    color:brown;
+    font-weight:bold;
+ }
+
+ ```
 
  ### 결과
   ![class-3-result](https://github.com/fastcampus-fe-group7/TIL/assets/86473590/9d9a935e-a7e5-4266-bc6c-75394572442e)
   
-  -> 요소 속성 내 선언된 순서와는 상관없이 bold의 내용이 적용된다.
-  <br>
-- 속성이 부모-자식 관계일 경우에는 스타일시트의 선언 순서에 관계 없이 자식의 속성으로 대체된다.
+  -  요소 속성 내 선언된 순서와는 상관없이 bold의 내용이 적용된다.
+
+## 우선순위가 다를 경우
+### HTML
+```html
+<div id="red"
+     class="orange"
+     style="color:yellow">
+  무슨색이 나올까?
+</div>
+```
+
+### CSS
+```css
+div{
+  color:blue !important;
+}
+#red{
+  color:red;
+}
+
+.orange{
+  color:orange;
+}
+```
+### 결과
+![image](https://github.com/unanbb/TIL/assets/86473590/bb4fb9c5-0d72-4442-867b-9ff77b4ec37e)
+
+- `div`: 1점, `id`: 100점, `class`: 10점 으로  `id`의 속성이 선택되어야 하지만 `div`의 속성으로 `!important`를 주었으므로 `div`가 최우선이 된다.
+
+## 부모-자식 관계일 경우
+- 속성이 부모-자식 관계일 경우에는 선택자의 선언 순서에 관계 없이 자식의 속성으로 대체된다.
   
  ### HTML
-  ![child-html](https://github.com/fastcampus-fe-group7/TIL/assets/86473590/4f72b962-409f-4dbb-b949-a2cdff3f905c)
+```html
+<div class="blue">
+  <p class="green">무슨 색?</p>
+</div>
+```
 
  ### CSS
-  ![child-css](https://github.com/fastcampus-fe-group7/TIL/assets/86473590/ac70e6a0-78d5-4340-99a2-0fde59aab73b)
+ ```css
+ .green{
+  color:green;
+ }
+
+ .blue{
+  color:blue;
+ }
+ ```
 
  ### 결과
   ![child-result](https://github.com/fastcampus-fe-group7/TIL/assets/86473590/b119a93f-c4f9-483a-89f8-cd1a31469f83)
