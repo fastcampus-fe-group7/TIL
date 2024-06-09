@@ -82,7 +82,7 @@
 각각 overflow의 하위속성으로, 하나의 축에 대한 overflow를 제어할 수 있다.
 일반적인 상황에서 두 속성 정의시, 별 다른 충돌 없이 두 속성이 모두 적용된다.
 
-### CSS
+### 🌈 CSS
 
 ```css
 .container {
@@ -94,7 +94,7 @@
 }
 ```
 
-### 결과
+### 💡 결과
 
 ![image](https://github.com/fastcampus-fe-group7/TIL/assets/86473590/23906840-dc15-4bd5-b2c5-223e082fe1e9)
 
@@ -108,18 +108,35 @@ W3C의 "CSS Overflow Module Level 3" 문서의 3.1을 보면 이런 사항이 �
 
 ❗ (의역) 만약, `overflow-x`나 `overflow-y`중 하나가 visible도 clip도 아닌 다른 값 (hidden, scroll, auto)이라면, visible은 auto, clip은 hidden으로 계산된다.<br>
 ➡ 무슨 말이냐면..
+### 🦴 HTML
+```html
+<div class="parent">
+  <div class="son"></div>
+</div>
+```
+### 🌈 CSS
+```css
+.parent{
+  width:200px;
+  height:200px;
+  background-color:orange;
+  overflow-x:auto;
+  overflow-y:visible;
+           /*-> auto로 변경*/
+}
+.son{
+  width:100px;
+  height:400px;
+  background-color:blue;
+}
+```
+### 💡 결과
+![image](https://github.com/fastcampus-fe-group7/TIL/assets/86473590/f8f8bbc5-fd8c-483f-9e9e-2f8b0b339aaa)
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="JjqyLJy" data-pen-title="overflow-excption" data-user="unanlee" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/unanlee/pen/JjqyLJy">
-  overflow-excption</a> by leeyunhwan (<a href="https://codepen.io/unanlee">@unanlee</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-
-위와 같이 overflow-x가 auto(visible이 아닌 값), overflow-y가 visible 값을 가질 경우, overflow-y의 값은 auto로 변경된다.<br>
+- 위와 같이 overflow-x가 auto(visible이 아닌 값), overflow-y가 visible 값을 가질 경우, overflow-y의 값은 auto로 변경된다.<br>
 ➡ 따라서 부모로부터 y축 방향으로 넘친 영역(🟦blue area)이 visible 처리되지않고, auto로 처리되어 스크롤이 생성된 모습을 띠게된다.
 
-## 결론
+## ⭐ 결론
 
 일반적인 사항에선 `overflow-x`와`overflow-y`가 별다른 충돌없이 병합되나, 위와 같은 예외사항에선 아래와 같이 작동된다.
 
@@ -135,7 +152,7 @@ W3C의 "CSS Overflow Module Level 3" 문서의 3.1을 보면 이런 사항이 �
 
 - `overflow-x`: clip, `overflow-y`: hidden <br>-> `overflow-x`: hidden, `overflow-y`: hidden
 
-[표]
+[속성값 표]
 
 | <center>값</center>      | <center>의미</center>                           |
 | ------------------------ | ----------------------------------------------- |
@@ -144,6 +161,6 @@ W3C의 "CSS Overflow Module Level 3" 문서의 3.1을 보면 이런 사항이 �
 | <center>scroll</center>  | <center>**스크롤** 생성(**항상**)</center>      |
 | <center>auto</center>    | <center>**스크롤** 생성(**넘칠 때만**)</center> |
 
-## 참고
+## 🔗 참고
 
 https://www.w3.org/TR/css-overflow-3/
