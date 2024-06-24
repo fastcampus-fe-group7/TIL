@@ -19,6 +19,7 @@
 
 ### JavaScript
 
+- [이벤트버블링&이벤트위임](JavaScript/%EC%9D%B4%EB%B2%A4%ED%8A%B8%EB%B2%84%EB%B8%94%EB%A7%81%26%EC%9D%B4%EB%B2%A4%ED%8A%B8%EC%9C%84%EC%9E%84.md)
 - [단축 평가](JavaScript/%EB%8B%A8%EC%B6%95%20%ED%8F%89%EA%B0%80.md)
 - [Import & export](JavaScript/import%20%26%20export.md)
 - [호이스팅](JavaScript/%ED%98%B8%EC%9D%B4%EC%8A%A4%ED%8C%85.md)
