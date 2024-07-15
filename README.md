@@ -34,6 +34,10 @@
 - [단축 평가](JavaScript/%EB%8B%A8%EC%B6%95%20%ED%8F%89%EA%B0%80.md)
 - [옵셔널 체이닝](JavaScript/%EC%98%B5%EC%85%94%EB%84%90%20%EC%B2%B4%EC%9D%B4%EB%8B%9D.md)
 
+### React
+
+- [Usestate 타입 정의](React/useState%20%ED%83%80%EC%9E%85%20%EC%A0%95%EC%9D%98.md)
+
 ### TypeScript
 
 - [타입 선언 키워드 비교](TypeScript/%ED%83%80%EC%9E%85%20%EC%84%A0%EC%96%B8%20%ED%82%A4%EC%9B%8C%EB%93%9C%20%EB%B9%84%EA%B5%90.md)
