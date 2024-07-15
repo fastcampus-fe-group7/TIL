@@ -36,5 +36,5 @@
 
 ### TypeScript
 
-- [Type, interface 키워드 비교](TypeScript/type%2C%20interface%20%ED%82%A4%EC%9B%8C%EB%93%9C%20%EB%B9%84%EA%B5%90.md)
+- [타입 선언 키워드 비교](TypeScript/%ED%83%80%EC%9E%85%20%EC%84%A0%EC%96%B8%20%ED%82%A4%EC%9B%8C%EB%93%9C%20%EB%B9%84%EA%B5%90.md)
 
