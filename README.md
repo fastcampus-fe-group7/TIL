@@ -41,6 +41,7 @@
 
 - [React virtual dom](React/React%20Virtual%20DOM.md)
 - [Usestate 타입 정의](React/useState%20%ED%83%80%EC%9E%85%20%EC%A0%95%EC%9D%98.md)
+- [Onclick과 onchange](React/onClick%EA%B3%BC%20onChange.md)
 
 ### TypeScript
 
