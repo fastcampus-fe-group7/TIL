@@ -42,6 +42,7 @@
 - [Onclick과 onchange](React/onClick%EA%B3%BC%20onChange.md)
 - [React virtual dom](React/React%20Virtual%20DOM.md)
 - [Usestate 타입 정의](React/useState%20%ED%83%80%EC%9E%85%20%EC%A0%95%EC%9D%98.md)
+- [이벤트 핸들링](React/%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%ED%95%B8%EB%93%A4%EB%A7%81.md)
 
 ### Tools
 
